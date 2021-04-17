@@ -1,0 +1,45 @@
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-navigation {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $grey-base;
+}
+
+.tab-link {
+  position: relative;
+  margin: 0;
+  padding: 1rem 0.75rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+  color: $grey-base;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background-color: $grey-dark;
+    transition: height 0.15s ease-in-out;
+  }
+
+  &.is-active {
+    color: $grey-dark;
+
+    &:after {
+      height: 6px;
+    }
+  }
+}

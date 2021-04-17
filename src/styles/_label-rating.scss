@@ -1,0 +1,37 @@
+.label-rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  line-height: 1.1;
+  background-color: $grey-light;
+  color: $white;
+}
+
+.label-bg-red {
+  background-color: $grade-orange-mid;
+}
+
+.label-bg-dark-red {
+  background-color: $rating-red;
+}
+
+.label-bg-orange {
+  background-color: $grade-yellow-mid;
+}
+
+.label-bg-green {
+  background-color: $grade-green-dark-02;
+}
+
+.label-bg-dark-green {
+  background-color: $grade-green-dark-01;
+}
+
+.label-text-grey {
+  color: $grey-base;
+}

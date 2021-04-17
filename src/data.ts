@@ -1,0 +1,60 @@
+import { ITableRow } from './models';
+
+export const DATA_TITLES_MAP: { [name: string]: string } = {
+  'Symbol': 'symbol',
+  'Price': 'price',
+  'Change': 'change',
+  'Change %': 'changePercentage',
+  'Alerts': 'alerts',
+  'Volume': 'volume',
+  'Avg. Vol': 'averageVolume',
+  'Prev Close': 'prevClose',
+  'Open': 'open',
+  'ןHigh': 'high',
+  'Low': 'low',
+  '52 Wk Range': 'range',
+  'Quant': 'quant',
+  'SA Authors': 'saAuthours',
+  'Sell Side ': 'sellSide',
+};
+
+export const dataTitles = Object.keys(DATA_TITLES_MAP);
+
+export const data: { [id: string]: ITableRow } = {
+  1: {
+    id: 1,
+    symbol: 'AFK',
+    price: '19.51',
+    change: '-0.14',
+    changePercentage: '0.71',
+    alerts: false,
+    volume: '1911',
+    averageVolume: '11.41K',
+    prevClose: '19.65',
+    open: '19.53',
+    high: '19.23',
+    low: '18.5',
+    dayRange: { start: 19.65, diff: 0.25, end: 19.69 },
+    quantRating: '2.2',
+    authorRating: '3.2',
+    sellSideRating: 'NR',
+  },
+  2: {
+    id: 2,
+    symbol: 'BRK.A',
+    price: '11.51',
+    change: '-0.14',
+    changePercentage: '0.71',
+    alerts: true,
+    volume: '1111',
+    averageVolume: '10.41K',
+    prevClose: '12.65',
+    open: '12.53',
+    high: '12.23',
+    low: '12.5',
+    dayRange: { start: 19.65, diff: 0.76, end: 19.69 },
+    quantRating: '1.2',
+    authorRating: '4.1',
+    sellSideRating: '4.5',
+  },
+};
