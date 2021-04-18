@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 
 interface ILabelRating {
   value: string;
 }
 
-const LabelRating: React.FunctionComponent<ILabelRating> = ({ value }) => {
+const LabelRating: React.FC<ILabelRating> = ({ value }) => {
   const renderColor = () => {
     const rating = Number(value);
 

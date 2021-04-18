@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 
 interface IDivider {
   color?: 'dark';
 }
 
-const Divider: React.FunctionComponent<IDivider> = ({ color }) => {
+const Divider: React.FC<IDivider> = ({ color }) => {
   return (
     <span className={`is-divider ${color ? `is-divider-${color}` : ''}`} />
   );

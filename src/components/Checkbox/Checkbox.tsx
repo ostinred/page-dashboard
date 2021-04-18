@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 interface ICheckbox {
   name: string;
@@ -7,7 +7,7 @@ interface ICheckbox {
   label?: string;
 }
 
-const Checkbox: React.FunctionComponent<ICheckbox> = ({
+const Checkbox: React.FC<ICheckbox> = ({
   name,
   onCheckboxChange,
   checked,

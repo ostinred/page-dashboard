@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
-interface IButton {
+export interface IButton {
   type?: 'button' | 'submit';
   title: string | boolean;
   className?: string;
@@ -19,7 +19,7 @@ interface IButton {
   backgroundColor?: string;
 }
 
-const Button: FunctionComponent<IButton> = ({
+const Button: React.FC<IButton> = ({
   type = 'button',
   title,
   onClick,

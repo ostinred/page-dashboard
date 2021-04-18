@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IDayRange, ITableRow } from './../models';
-import Checkbox from './Checkbox';
+import Checkbox from './Checkbox/Checkbox';
 import LabelRating from './LabelRating';
 
 interface TableRowProps {
@@ -8,10 +8,7 @@ interface TableRowProps {
   onChange: (item: ITableRow) => void;
 }
 
-const TableRow: React.FunctionComponent<TableRowProps> = ({
-  data,
-  onChange,
-}) => {
+const TableRow: React.FC<TableRowProps> = ({ data, onChange }) => {
   const {
     symbol,
     price,

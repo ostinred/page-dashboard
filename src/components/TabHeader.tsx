@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from './Button/Button';
 import Divider from './Divider';
 
 interface ITabHeader {
@@ -10,7 +10,7 @@ interface ITabHeader {
   onViewHeadlines: () => void;
 }
 
-const TabHeader: React.FunctionComponent<ITabHeader> = ({
+const TabHeader: React.FC<ITabHeader> = ({
   onAddSybmol,
   onEditPortfolio,
   onExcelExport,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import Checkbox from '../Checkbox';
+import Checkbox from './Checkbox';
 
 it('should call callback on Click', () => {
   const onCheckboxChange = jest.fn();

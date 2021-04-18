@@ -1,10 +1,10 @@
-import React, { useState, FunctionComponent } from 'react';
+import React, { useState } from 'react';
 import TabHeader from './components/TabHeader';
 import { data as fakeData, dataTitles, DATA_TITLES_MAP } from './data';
 import Table from './components/Table';
 import Tabs from './components/Tabs';
 
-const App: FunctionComponent = () => {
+const App: React.FC = () => {
   const [data, setData] = useState(fakeData);
 
   const handleAddSybmol = () => console.log('handleAddSybmol');
